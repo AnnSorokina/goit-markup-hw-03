@@ -1,0 +1,222 @@
+/* Палитра цветов макета
+logo, hover color: #2196F3;
+color: #FFFFFF;
+p color: #757575;
+h2,h3 color: #212121;
+footer color: rgba(255, 255, 255, 0.6);
+background: rgba(33, 150, 243, 0.9);
+Оформление текста, цвета, эффекты фокусировки и наведения
+background-color - для отображения белого цвета шрифта */
+:root {
+  --primary-text-color: #212121;
+  --ordinary-text-color: #757575;
+  --title-text-color: #ffffff;
+  --accent-text-color: #2196f3;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --background-text-color: rgba(33, 150, 243, 0.9);
+  --background-color: lightblue;
+}
+
+body {
+  font-family: Roboto, serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+}
+
+a {
+  color: var(--primary-text-color);
+}
+
+ul,
+menu {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.site-menu-list,
+.contacts-list {
+  text-decoration: none;
+}
+
+.site-menu-list:hover,
+.contacts-list:hover,
+.site-menu-list:focus,
+.contacts-list:focus {
+  color: var(--accent-text-color);
+}
+
+h1 {
+  color: var(--title-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+p,
+.contacts {
+  color: var(--ordinary-text-color);
+}
+
+.site-menu {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.contacts {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--title-text-color);
+  background-color: var(--accent-text-color);
+}
+
+.logo-header,
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-accent {
+  color: #2196f3;
+}
+
+.logo-footer {
+  font-size: 22px;
+  line-height: 1.18;
+  color: var(--title-text-color);
+}
+
+.work-accents h3 {
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: uppercase;
+}
+
+.work-accents-p {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.work-groups {
+  color: var(--title-text-color);
+  text-transform: uppercase;
+}
+
+.applications h2,
+.teampeople h2,
+.clients h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.applications h3 {
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.teampeople h3,
+.teampeople p {
+  font-size: 16px;
+  line-height: 1.36;
+  text-align: center;
+}
+
+.teampeople h3 {
+  font-weight: 500;
+}
+
+b {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.footer-address,
+.footer-address-box {
+  line-height: 1.71;
+}
+
+.footer-address > a {
+  line-height: 24px;
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.footer-address-box > a,
+.footer-developed {
+  color: var(--footer-text-color);
+  text-decoration: none;
+}
+
+.footer-developed {
+  font-size: 12px;
+  line-height: 2;
+}
+
+.portfolio-works a {
+  text-decoration: none;
+}
+
+.portfolio-navigation button:hover,
+.portfolio-navigation button:focus {
+  background-color: var(--accent-text-color);
+  color: var(--title-text-color);
+}
+
+.portfolio-navigation button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background: #f5f4fa;
+}
+
+.portfolio-works .hover-text {
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--title-text-color);
+}
+
+.portfolio-works .p {
+  font-size: 16px;
+  line-height: 1.88;
+}
+.mail-button {
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+  color: var(--title-text-color);
+  background-color: var(--accent-text-color);
+}
