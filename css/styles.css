@@ -22,10 +22,9 @@ body {
   background-color: var(--background-color);
 }
 
-.wrapper {
-  width: 1630px;
-  padding: 25px 15px 0;
-}
+/* .wrapper {
+  padding-bottom: 0;
+} */
 
 a {
   color: var(--primary-text-color);
@@ -49,19 +48,24 @@ h2,
 ul,
 menu,
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .container {
   margin-top: 94px;
-  padding-left: 200px;
-  padding-right: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1630px;
+  padding-left: 215px;
+  padding-right: 215px;
 }
 
 /* Хедер*/
 
 .page-header {
   margin-top: 0;
+  padding-top: 25px;
 }
 
 .main-nav,
@@ -108,7 +112,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.hero h1 {
+.hero > h1 {
   width: 650px;
 }
 
@@ -138,6 +142,7 @@ p,
 
   color: var(--title-text-color);
   background-color: var(--accent-text-color);
+  /* border-color: rgba(0, 0, 0, 0.25); */
 
   font-weight: 700;
   font-size: 16px;
@@ -165,11 +170,18 @@ p,
   color: var(--title-text-color);
 }
 
+.work-accents li:not(:last-child),
+.applications li:not(:last-child),
+.teampeople li:not(:last-child),
+.clients li:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Work */
 
 .work-accents ul {
   display: inline-flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding-left: 0;
 }
 
@@ -179,7 +191,6 @@ p,
   flex-direction: column;
   justify-content: space-evenly;
   /* justify-content: space-between; */
-  margin-right: 29px;
   /* outline: 2px solid tomato; */
 }
 
@@ -215,7 +226,6 @@ p,
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-  margin-right: 30px;
 }
 
 .applications h2,
@@ -251,7 +261,6 @@ p,
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-  margin-right: 30px;
 }
 
 .teampeople h3 {
@@ -286,7 +295,6 @@ p,
   justify-content: center;
   align-items: center;
   /* justify-content: space-between; */
-  margin-right: 30px;
 }
 
 /* Футер */
@@ -294,6 +302,7 @@ p,
   padding-top: 48px;
   padding-bottom: 21px;
   /* outline: 2px solid tomato; */
+  background-color: #2f303a;
 }
 
 .studio-info,
@@ -361,11 +370,15 @@ ul.portfolio-works {
   flex-wrap: wrap;
 }
 
+.portfolio-works li:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
 .portfolio-works li {
-  width: 370px;
+  width: 375px;
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
+  /* margin-right: 30px; */
 }
 
 p.portfolio-works.hover-text {
