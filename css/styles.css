@@ -1,12 +1,7 @@
-/* Палитра цветов макета
-logo, hover color: #2196F3;
-color: #FFFFFF;
-p color: #757575;
-h2,h3 color: #212121;
-footer color: rgba(255, 255, 255, 0.6);
-background: rgba(33, 150, 243, 0.9);
+/* 
 Оформление текста, цвета, эффекты фокусировки и наведения
 background-color - для отображения белого цвета шрифта */
+
 :root {
   --primary-text-color: #212121;
   --ordinary-text-color: #757575;
@@ -27,6 +22,11 @@ body {
   background-color: var(--background-color);
 }
 
+.wrapper {
+  width: 1630px;
+  padding: 25px 15px 0;
+}
+
 a {
   color: var(--primary-text-color);
 }
@@ -38,6 +38,50 @@ menu {
 
 address {
   font-style: normal;
+}
+
+.page-header {
+  display: flex;
+}
+
+h2,
+/* h3, */
+ul,
+menu,
+p {
+  margin: 0;
+}
+
+.container {
+  margin-top: 94px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+/* Хедер*/
+
+.page-header {
+  margin-top: 0;
+}
+
+.main-nav,
+.logo-header,
+.site-menu,
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  margin-right: 80px;
+}
+
+.site-menu-list {
+  margin-right: 50px;
+}
+
+.contacts-list {
+  margin-left: 30px;
 }
 
 .site-menu-list,
@@ -53,6 +97,8 @@ address {
 }
 
 h1 {
+  margin: 0 auto;
+
   color: var(--title-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -62,8 +108,12 @@ h1 {
   text-transform: uppercase;
 }
 
+.hero h1 {
+  width: 650px;
+}
+
 p,
-.contacts {
+.contacts-list {
   color: var(--ordinary-text-color);
 }
 
@@ -73,20 +123,26 @@ p,
 }
 
 .contacts {
+  margin-left: auto;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
 
 .hero-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  color: var(--title-text-color);
+  background-color: var(--accent-text-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: var(--title-text-color);
-  background-color: var(--accent-text-color);
 }
 
 .logo-header,
@@ -103,12 +159,33 @@ p,
 }
 
 .logo-footer {
+  margin-bottom: 10px;
   font-size: 22px;
   line-height: 1.18;
   color: var(--title-text-color);
 }
 
+/* Work */
+
+.work-accents ul {
+  display: inline-flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.work-accents li {
+  width: 278px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* justify-content: space-between; */
+  margin-right: 29px;
+  /* outline: 2px solid tomato; */
+}
+
 .work-accents h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-size: inherit;
   line-height: inherit;
   text-transform: uppercase;
@@ -122,6 +199,23 @@ p,
 .work-groups {
   color: var(--title-text-color);
   text-transform: uppercase;
+}
+
+/* Приложения */
+
+.applications ul {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 0;
+}
+
+.applications li {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin-right: 30px;
 }
 
 .applications h2,
@@ -143,6 +237,28 @@ p,
   color: var(--title-text-color);
 }
 
+/* Наша команда */
+
+.teampeople ul {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 0;
+}
+
+.teampeople li {
+  width: 278px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin-right: 30px;
+}
+
+.teampeople h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 .teampeople h3,
 .teampeople p {
   font-size: 16px;
@@ -152,6 +268,53 @@ p,
 
 .teampeople h3 {
   font-weight: 500;
+}
+
+/* Постоянные клиенты */
+
+.clients ul {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 0;
+}
+
+.clients li {
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-right: 30px;
+}
+
+/* Футер */
+.page-footer {
+  padding-top: 48px;
+  padding-bottom: 21px;
+  /* outline: 2px solid tomato; */
+}
+
+.studio-info,
+.studio-info .address,
+.social-links,
+.social-links ul,
+.social-links li,
+.subscription {
+  display: inline-flex;
+  /* justify-content: space-between; */
+  margin-top: ;
+  /* padding-left: 0; */
+}
+
+.studio-info {
+  margin-right: 179px;
+  flex-direction: column;
+}
+
+.studio-info ul {
+  padding-left: 0;
 }
 
 b {
@@ -165,6 +328,7 @@ b {
 }
 
 .footer-address > a {
+  margin-top: 9px;
   line-height: 24px;
   color: var(--title-text-color);
   text-decoration: none;
@@ -179,6 +343,40 @@ b {
 .footer-developed {
   font-size: 12px;
   line-height: 2;
+  text-align: center;
+}
+
+/* Портфолио */
+menu.portfolio-navigation,
+ul.portfolio-works {
+  padding-left: 0;
+}
+
+.portfolio-navigation-section > .portfolio-works {
+  margin-top: 50px;
+}
+
+.portfolio-works ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-works li {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+p.portfolio-works.hover-text {
+  display: none;
+}
+
+.portfolio-navigation,
+.portfolio-navigation li {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .portfolio-works a {
@@ -192,6 +390,9 @@ b {
 }
 
 .portfolio-navigation button {
+  border-radius: 4px;
+  margin-right: 8px;
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
