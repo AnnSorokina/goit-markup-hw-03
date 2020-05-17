@@ -312,7 +312,6 @@ p,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 /* Футер */
@@ -328,10 +327,11 @@ p,
 .social-links,
 .social-links ul,
 .social-links li,
-.subscription {
+.subscription,
+.subscription li {
   display: inline-flex;
   /* justify-content: space-between; */
-  margin-top: ;
+  /* margin-top: ; */
   /* padding-left: 0; */
 }
 
@@ -349,6 +349,7 @@ b {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+
 .footer-address,
 .footer-address-box {
   line-height: 1.71;
@@ -365,6 +366,45 @@ b {
 .footer-developed {
   color: var(--footer-text-color);
   text-decoration: none;
+}
+
+.social-links {
+  margin-right: 100px;
+}
+
+.subscription {
+  flex-direction: column;
+}
+
+.email {
+  margin-top: 21px;
+  width: 270px;
+  border-radius: 4px;
+  height: 50px;
+
+  border-color: lightgray;
+}
+
+.mail-button {
+  width: 200px;
+  height: 50px;
+
+  margin-top: 21px;
+  margin-left: 12px;
+  padding: 10px 45px;
+  border-radius: 4px;
+  /* align-items: center; */
+
+  color: var(--title-text-color);
+  background-color: var(--accent-text-color);
+  border-color: var(--background-text-color);
+
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
 }
 
 .footer-developed {
@@ -404,7 +444,7 @@ menu.portfolio-navigation,
 }
 
 .portfolio-works-list li {
-  width: 375px;
+  width: calc((100% - 2 * 30px) / 3);
   display: flex;
   flex-direction: column;
 }
@@ -460,14 +500,12 @@ p.portfolio-works.hover-text {
   font-size: 16px;
   line-height: 1.88;
 }
-.mail-button {
-  font-family: inherit;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  align-items: center;
-  text-align: center;
-  color: var(--title-text-color);
-  background-color: var(--accent-text-color);
-}
+
+/* Для позиционирования в футере
+
+ .footer-social-links {
+  display: flex;
+  width: 207px;
+  justify-content: space-between; 
+  
+  .footer-social-links:not(:last-child){ margin-right: 10px;*/
