@@ -22,9 +22,27 @@ body {
   background-color: var(--background-color);
 }
 
-/* .wrapper {
-  padding-bottom: 0;
+/* .container:not(:last-child, :first-child) {
+  margin-bottom: 94px;
 } */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1630px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
+h2,
+/* h3, */
+ul,
+menu,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 
 a {
   color: var(--primary-text-color);
@@ -39,32 +57,10 @@ address {
   font-style: normal;
 }
 
-.page-header {
-  display: flex;
-}
-
-h2,
-/* h3, */
-ul,
-menu,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-.container {
-  margin-top: 94px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1630px;
-  padding-left: 215px;
-  padding-right: 215px;
-}
-
 /* Хедер*/
 
 .page-header {
+  display: flex;
   margin-top: 0;
   padding-top: 25px;
 }
@@ -73,12 +69,16 @@ p {
 .logo-header,
 .site-menu,
 .contacts {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
 .logo-header {
   margin-right: 80px;
+}
+
+.site-menu {
+  margin-right: 280px;
 }
 
 .site-menu-list {
@@ -171,6 +171,8 @@ p,
   color: var(--title-text-color);
 }
 
+/* Work */
+
 .work-accents li:not(:last-child),
 .applications li:not(:last-child),
 .teampeople li:not(:last-child),
@@ -178,7 +180,9 @@ p,
   margin-right: 30px;
 }
 
-/* Work */
+.work-accents {
+  margin-top: 94px;
+}
 
 .work-accents ul {
   display: inline-flex;
@@ -215,6 +219,10 @@ p,
 
 /* Приложения */
 
+.applications {
+  margin-top: 94px;
+}
+
 .applications ul {
   display: inline-flex;
   justify-content: space-between;
@@ -250,6 +258,10 @@ p,
 
 /* Наша команда */
 
+.teampeople {
+  margin-top: 94px;
+}
+
 .teampeople ul {
   display: inline-flex;
   justify-content: space-between;
@@ -281,6 +293,11 @@ p,
 }
 
 /* Постоянные клиенты */
+
+.clients {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
 
 .clients ul {
   display: inline-flex;
@@ -357,6 +374,12 @@ b {
 }
 
 /* Портфолио */
+
+.portfolio-works .container {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
 menu.portfolio-navigation,
 .portfolio-works-list {
   padding-left: 0;
@@ -398,8 +421,9 @@ p.portfolio-works.hover-text {
   justify-content: center;
 }
 
-.portfolio-works-label {
+.portfolio-works-title {
   padding: 20px 24px;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .portfolio-works a {
@@ -432,7 +456,7 @@ p.portfolio-works.hover-text {
   line-height: 2;
 }
 
-.portfolio-works-list .p {
+.portfolio-works-p {
   font-size: 16px;
   line-height: 1.88;
 }
