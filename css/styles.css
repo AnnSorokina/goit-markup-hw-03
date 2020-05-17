@@ -50,6 +50,7 @@ menu,
 p {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 .container {
@@ -357,28 +358,32 @@ b {
 
 /* Портфолио */
 menu.portfolio-navigation,
-ul.portfolio-works {
+.portfolio-works-list {
   padding-left: 0;
 }
 
-.portfolio-navigation-section > .portfolio-works {
+.portfolio-works-list {
   margin-top: 34px;
 }
 
-.portfolio-works ul {
+.portfolio-works-list,
+.portfolio-works-list li {
   display: inline-flex;
   flex-wrap: wrap;
 }
 
-.list li:not(:nth-child(3n)) {
+.portfolio-works-list li:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.list li {
+.portfolio-works-list li:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+
+.portfolio-works-list li {
   width: 375px;
   display: flex;
   flex-direction: column;
-  /* margin-right: 30px; */
 }
 
 p.portfolio-works.hover-text {
@@ -422,13 +427,12 @@ p.portfolio-works.hover-text {
   background: #f5f4fa;
 }
 
-.portfolio-works .hover-text {
+.portfolio-works-list h2 {
   font-size: 18px;
-  line-height: 1.56;
-  color: var(--title-text-color);
+  line-height: 2;
 }
 
-.portfolio-works .p {
+.portfolio-works-list .p {
   font-size: 16px;
   line-height: 1.88;
 }
