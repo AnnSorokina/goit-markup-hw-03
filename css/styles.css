@@ -317,7 +317,6 @@ p,
 /* Футер */
 .page-footer {
   padding-top: 48px;
-  padding-bottom: 21px;
   /* outline: 2px solid tomato; */
   background-color: #2f303a;
 }
@@ -409,9 +408,13 @@ b {
 }
 
 .footer-developed {
+  margin-top: 28px;
+  padding-top: 18px;
+  padding-bottom: 21px;
   font-size: 12px;
   line-height: 2;
   text-align: center;
+  outline: 1px solid lime;
 }
 
 /* Портфолио */
