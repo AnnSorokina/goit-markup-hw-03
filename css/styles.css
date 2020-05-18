@@ -57,7 +57,6 @@ address {
 /* Logo */
 
 .logo-header {
-  /* display: flex; */
   margin-right: 80px;
 }
 
@@ -178,12 +177,12 @@ h1 {
 
 /* Work */
 
-.work-accents li:not(:last-child),
+/* .work-accents li:not(:last-child),
 .applications li:not(:last-child),
 .teampeople li:not(:last-child),
 .clients li:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .work-accents {
   padding-top: 94px;
@@ -191,7 +190,7 @@ h1 {
 
 .work-accents ul {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   padding-left: 0;
 }
 
@@ -214,11 +213,6 @@ h1 {
   letter-spacing: 0.03em;
 }
 
-.work-groups {
-  color: var(--title-text-color);
-  text-transform: uppercase;
-}
-
 /* Приложения */
 
 .applications {
@@ -230,13 +224,13 @@ h1 {
 }
 
 .applications ul {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   padding-left: 0;
 }
 
 .applications li {
-  width: 380px;
+  width: 370px;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
@@ -279,13 +273,13 @@ h1 {
 }
 
 .teampeople ul {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   padding-left: 0;
 }
 
 .teampeople li {
-  width: 278px;
+  width: 270px;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
@@ -319,7 +313,7 @@ h1 {
 }
 
 .clients ul {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   padding-left: 0;
 }
@@ -327,7 +321,6 @@ h1 {
 .clients li {
   width: 175px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -351,7 +344,7 @@ h1 {
 }
 
 .studio-info {
-  margin-right: 179px;
+  margin-right: 69px;
   flex-direction: column;
 }
 
@@ -390,11 +383,15 @@ b {
 
 .subscription {
   flex-direction: column;
+  margin-right: auto;
+}
+
+.subscription > li:first-child {
+  margin-bottom: 21px;
 }
 
 .email {
-  margin-top: 21px;
-  width: 270px;
+  width: 358px;
   border-radius: 4px;
   height: 50px;
 
@@ -405,7 +402,6 @@ b {
   width: 200px;
   height: 50px;
 
-  margin-top: 21px;
   margin-left: 12px;
   padding: 10px 45px;
   border-radius: 4px;
@@ -455,6 +451,11 @@ menu.portfolio-navigation,
   display: inline-flex;
   flex-wrap: wrap;
 }
+
+/*
+ .portfolio-works-list li {
+  justify-content: space-between;
+} */
 
 .portfolio-works-list li:not(:nth-child(3n)) {
   margin-right: 30px;
