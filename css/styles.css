@@ -23,11 +23,11 @@ body {
 }
 
 .container {
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin-left: auto;
+  margin-right: auto;
   width: 1230px;
-  margin-left: 200px;
-  margin-right: 200px;
+  /* margin-left: 200px;
+  margin-right: 200px; */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -84,10 +84,6 @@ address {
 /* Хедер*/
 
 .page-header {
-  /* display: inline-flex; */
-  /* align-items: center; */
-  /* margin-top: 0; */
-  padding-top: 25px;
 }
 
 .main-nav {
@@ -190,21 +186,17 @@ h1 {
 }
 
 .work-accents {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .work-accents ul {
-  display: inline-flex;
+  display: flex;
   /* justify-content: space-between; */
   padding-left: 0;
 }
 
 .work-accents li {
   width: 278px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  /* justify-content: space-between; */
   /* outline: 2px solid tomato; */
 }
 
@@ -229,13 +221,16 @@ h1 {
 /* Приложения */
 
 .applications {
-  margin-top: 94px;
+  padding-top: 94px;
+}
+
+.applications h2 {
+  margin-bottom: 50px;
 }
 
 .applications ul {
   display: inline-flex;
   justify-content: space-between;
-  margin-top: 50px;
   padding-left: 0;
 }
 
@@ -268,13 +263,16 @@ h1 {
 /* Наша команда */
 
 .teampeople {
-  margin-top: 94px;
+  padding-top: 94px;
+}
+
+.teampeople h2 {
+  margin-bottom: 50px;
 }
 
 .teampeople ul {
   display: inline-flex;
   justify-content: space-between;
-  margin-top: 50px;
   padding-left: 0;
 }
 
@@ -304,14 +302,17 @@ h1 {
 /* Постоянные клиенты */
 
 .clients {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients h2 {
+  margin-bottom: 50px;
 }
 
 .clients ul {
   display: inline-flex;
   justify-content: space-between;
-  margin-top: 50px;
   padding-left: 0;
 }
 
@@ -421,14 +422,16 @@ b {
   font-size: 12px;
   line-height: 2;
   text-align: center;
-  outline: 1px solid paleturquoise;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Портфолио */
 
 .portfolio-works .container {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 menu.portfolio-navigation,
@@ -436,8 +439,8 @@ menu.portfolio-navigation,
   padding-left: 0;
 }
 
-.portfolio-works-list {
-  margin-top: 34px;
+.portfolio-navigation {
+  margin-bottom: 34px;
 }
 
 .portfolio-works-list,
