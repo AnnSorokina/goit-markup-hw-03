@@ -330,8 +330,6 @@ p,
 .subscription li {
   display: inline-flex;
   /* justify-content: space-between; */
-  /* margin-top: ; */
-  /* padding-left: 0; */
 }
 
 .studio-info {
@@ -414,7 +412,7 @@ b {
   font-size: 12px;
   line-height: 2;
   text-align: center;
-  outline: 1px solid lime;
+  outline: 1px solid paleturquoise;
 }
 
 /* Портфолио */
@@ -467,7 +465,7 @@ p.portfolio-works.hover-text {
 
 .portfolio-works-title {
   padding: 20px 24px;
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: var(--title-text-color);
 }
 
 .portfolio-works a {
@@ -505,11 +503,14 @@ p.portfolio-works.hover-text {
   line-height: 1.88;
 }
 
+.portfolio-works-image {
+  display: block;
+}
+
 /* Для позиционирования в футере
 
  .footer-social-links {
   display: flex;
-  width: 207px;
   justify-content: space-between; 
   
   .footer-social-links:not(:last-child){ margin-right: 10px;*/
