@@ -231,7 +231,6 @@ h1 {
   width: 370px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .applications h2,
@@ -280,7 +279,6 @@ h1 {
   width: 270px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .teampeople h3 {
@@ -317,7 +315,7 @@ h1 {
 }
 
 .clients li {
-  width: 175px;
+  width: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -338,7 +336,6 @@ h1 {
 .subscription,
 .subscription li {
   display: inline-flex;
-  /* justify-content: space-between; */
 }
 
 .studio-info {
@@ -434,11 +431,6 @@ b {
   padding-bottom: 94px;
 }
 
-.portfolio-works .container {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 menu.portfolio-navigation,
 .portfolio-works-list {
   padding-left: 0;
@@ -454,8 +446,7 @@ menu.portfolio-navigation,
   flex-wrap: wrap;
 }
 
-/*
- .portfolio-works-list li {
+/* .portfolio-works-list {
   justify-content: space-between;
 } */
 
