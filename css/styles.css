@@ -81,9 +81,6 @@ menu {
 
 /* Хедер*/
 
-.page-header {
-}
-
 .main-nav {
   display: flex;
   align-items: center;
@@ -140,6 +137,10 @@ p,
 
 /* Герой */
 
+/* .hero {
+  text-align: center;
+} */
+
 h1 {
   margin: 0 auto;
 
@@ -157,6 +158,7 @@ h1 {
 }
 
 .hero-button {
+  /* display: inline-block; */
   display: flex;
   margin-left: auto;
   margin-right: auto;
